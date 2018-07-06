@@ -1,0 +1,21 @@
+
+<%= content_for :head do %>
+  <%= stylesheet_link_tag "application" %>
+<% end %>
+
+<%= content_for :global_header_text do %>
+  <%= t('common.Apply_For_Legal_Aid') %>
+<% end %>
+
+<%= content_for :content do %>
+  <%= csrf_meta_tags %>
+  <div class="grid-row">
+    <div class="column-full">
+      <main id="content">
+        <%= yield %>
+      </main>
+    </div>
+  </div>
+<% end %>
+
+<%= render template: 'layouts/govuk_template' %>
