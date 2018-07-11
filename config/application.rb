@@ -2,8 +2,6 @@ require_relative 'boot'
 
 require 'rails/all'
 
-require 'nunjucks'
-
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -19,11 +17,5 @@ module TestDesignSystem
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    nunjucks.configure([
-  "node_modules/govuk-frontend/",
-  "node_modules/govuk-frontend/components/"
-], {
-  autoescape: true
-})
   end
 end
