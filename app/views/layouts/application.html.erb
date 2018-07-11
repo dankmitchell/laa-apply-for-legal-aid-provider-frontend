@@ -1,21 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test-design-system</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-<%= content_for :head do %>
-  <%= stylesheet_link_tag "application" %>
-<% end %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
 
-<%= content_for :global_header_text do %>
-  <%= t('common.Apply_For_Legal_Aid') %>
-<% end %>
-
-<%= content_for :content do %>
-  <%= csrf_meta_tags %>
-  <div class="grid-row">
-    <div class="column-full">
-      <main id="content">
-        <%= yield %>
-      </main>
-    </div>
-  </div>
-<% end %>
-
-<%= render template: 'layouts/govuk_template' %>
+  <body>
+    <%= yield %>
+  </body>
+</html>

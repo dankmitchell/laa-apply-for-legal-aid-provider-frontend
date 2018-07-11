@@ -60,8 +60,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'govuk_frontend_toolkit', '~> 6.0.0'
-gem 'govuk_elements_rails', '~> 3.0.0'
-gem 'govuk_elements_form_builder',  '~>1.0.0'
-gem 'govuk_template'
