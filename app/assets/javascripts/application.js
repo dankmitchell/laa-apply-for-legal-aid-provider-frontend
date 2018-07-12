@@ -14,12 +14,3 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-
-var nunjucks = require('nunjucks')
-
-nunjucks.configure([
-  "node_modules/govuk-frontend/",
-  "node_modules/govuk-frontend/components/"
-], {
-  autoescape: true
-})
